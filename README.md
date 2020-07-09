@@ -3,8 +3,8 @@ My entry into the [UCSD ACM's Hide and Seek AI competition :)](https://ai.acmucs
 The bot's name is "	top ten anime betrayals"...
 
 ### Disclaimer:
-This repository is open-sourced and free to reference, though it is not very well written.\
-* *Beware: major undocumented, spaghetti code*\
+This repository is open-sourced and free to reference, though it is not very well written.
+* *Beware: major undocumented, spaghetti code*
 * *Featuring: many bugs*
 
 ## Seeker Idea
