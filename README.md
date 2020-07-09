@@ -21,5 +21,24 @@ This bounce-and-chase logic is essentially all the seeker does.
 ## Hider Idea
 I realized that to achieve higher scores, it was necessary to implement a good hider. Seekers, in general, followed the same sort of wander-and-chase logic, so it was the hider logic that mattered most. This is where I spent the majority of my time writing code.
 
-* The first idea of my hider was to run in the opposite direction of the seeker. Implementing this basic avoidance was enough to bring my bot to first in the live leaderboard, but I knew that it would not be enough.
-* The second idea of my hider was to identify "wall islands," connected components of walls, that my hider could run around in circles. In this fashion, seekers would run around the islands chasing my hider -- but would always be one step behind. There would be no bad moves that would bring me to a dead-end, unlike my first idea. To implement this feature, I ran scipy's convex hull algorithm on wall islands to identify the smallest bound of such islands. The vertices of the hull then, give us waypoints that my hider can run around.
+* The first idea of my hider was to run in the opposite direction of the seeker. Implementing this basic avoidance was enough to bring my bot to first in the live leaderboard, but I knew that it would not be enough. This strategy was riddled with holes and my implementation was buggy too.
+* The second idea of my hider was to identify "wall islands," connected components of walls, that my hider could run around in circles. In this fashion, seekers would run around the islands chasing my hider -- but would always be one step behind. Unlike my first idea, there would be no bad moves made that would bring my hiders to a dead-end (e.g. running into a bad corner). To implement this feature, I ran scipy's convex hull algorithm on wall islands to identify the smallest bound of such islands. The vertices of the hull would give my hiders waypoints to run around.
+
+## Future Improvements
+"top ten anime betrayals" is by no means a smart/perfect bot. There were a lot of improvements that could have been made to both the bot and the code itself. Here are some ideas for the future:
+
+Seeker
+-------
+* Instead of choosing random points, have all visible points marked as visited. Then within the range of vision, if there are any, choose points that are hidden as the next task to visit. Once all of these initially hidden points are all visited, choose the next set of points that remain invisible to you from your current position.
+* When the hider suddenly disappears, keep track of it's last seen position. Then, for every step that the hider still isn't seen, extend the last seen position in a BFS fashion so that we have a growing list of possible positions that the hider moved to. This would give us better idea of the general position(s) to move to when hiders disappear from sight.
+
+Hider
+-------
+* When threatened on both ends of an island, jump to a new island.
+* Make hiders spread between different islands if possible. (Currently have a tendency of all sticking to same island).
+* ????
+* profit
+
+
+
+
