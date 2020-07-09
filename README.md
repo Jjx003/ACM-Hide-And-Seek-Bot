@@ -2,6 +2,7 @@
 My entry into the [UCSD ACM's Hide and Seek AI competition :)](https://ai.acmucsd.com/tournaments/a0Zlpa/ranks)\
 This bot, which I named "top ten anime betrayals," managed to win second place 🥈
 
+![Demo Video](assets/gameplay.gif)
 
 ### Disclaimer:
 This repository is open-sourced and free to reference, though it is not very well written.
