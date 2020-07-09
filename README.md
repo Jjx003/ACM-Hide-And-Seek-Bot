@@ -1,5 +1,6 @@
 # ACM-Hide-And-Seek-Bot
-My entry into the UCSD ACM's Hide and Seek AI compeition :)
+My entry into the [UCSD ACM's Hide and Seek AI compeition :)](https://ai.acmucsd.com/tournaments/a0Zlpa/ranks)
+As a joke, my bot was named "	top ten anime betrayals." 
 
 ### Disclaimer:
 This repository is open-sourced and free to reference, though it is not very well written. 
