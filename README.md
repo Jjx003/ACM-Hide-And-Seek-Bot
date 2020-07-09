@@ -3,9 +3,9 @@ My entry into the [UCSD ACM's Hide and Seek AI compeition :)](https://ai.acmucsd
 The bot's name is "	top ten anime betrayals"...
 
 ### Disclaimer:
-This repository is open-sourced and free to reference, though it is not very well written. \
-*Beware: major undocumented, spaghetti code* \
-*Featuring: a lot of bugs* \
+This repository is open-sourced and free to reference, though it is not very well written.\
+*Beware: major undocumented, spaghetti code*\
+*Featuring: a lot of bugs*\
 
 ## Seeker Idea
 Instead of calculating the shortest path to some destination per iteration, I decided to use the Floyd-Warshall algorithm to calculate the shortest paths of all pairs of nodes during setup. This was done just for convenience purposes.
