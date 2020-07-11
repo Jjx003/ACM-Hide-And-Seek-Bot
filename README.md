@@ -4,7 +4,7 @@ This bot, which I named "top ten anime betrayals," managed to win second place �
 
 ## Fellow Competing Bots <3
 * 🥇 Joe Cai's first place "pizza" (Currently unavailable)
-* 🥉 [Kevin He's third place "botpwner"] (https://github.com/kevin-he-01/hide-and-seek-bot)
+* 🥉 [Kevin He's third place "botpwner"](https://github.com/kevin-he-01/hide-and-seek-bot)
 * 🎉 [Ishaan Kavoori's fourth place "Ultron"](https://github.com/ishaanharry/ACM-AI-Competition-HideAndSeek)
 * 🎉 [Stone Tao's fifth "breadbot"](https://github.com/acmucsd/hide-and-seek-ai/tree/master/breadbot)
 
