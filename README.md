@@ -10,8 +10,6 @@ This bot, which I named "top ten anime betrayals," managed to win second place ð
 
 
 
-![Demo Video](assets/gameplay.gif)
-
 ### Disclaimer:
 This repository is open-sourced and free to reference, though it is not very well written.
 * *Beware: major undocumented, spaghetti code*
@@ -31,6 +29,8 @@ I realized that to achieve higher scores, it was necessary to implement a good h
 
 * The first idea of my hider was to run in the opposite direction of the seeker. Implementing this basic avoidance was enough to bring my bot to first in the live leaderboard, but I knew that it would not be enough. This strategy was riddled with holes and my implementation was buggy too.
 * The second idea of my hider was to identify "wall islands," connected components of walls, that my hider could run around in circles. In this fashion, seekers would run around the islands chasing my hider -- but would always be one step behind. Unlike my first idea, there would be no bad moves made that would bring my hiders to a dead-end (e.g. running into a bad corner). To implement this feature, I ran scipy's convex hull algorithm on wall islands to identify the smallest bound of such islands. The vertices of the hull would give my hiders waypoints to run around.
+
+![Demo Video](assets/gameplay.gif)
 
 ## Future Improvements
 "top ten anime betrayals" is by no means a smart/perfect bot. There were a lot of improvements that could have been made to both the bot and the code itself. Here are some ideas for the future:
